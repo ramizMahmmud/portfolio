@@ -1,0 +1,409 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  background-color: black;
+  color: white;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+.logo a {
+  text-decoration: none;
+  color: rgb(38, 224, 150);
+}
+.navbar .nav-links {
+  display: flex;
+  list-style: none;
+  
+}
+
+.navbar .nav-links li {
+  margin-left: 20px;
+
+}
+
+.navbar .nav-links a {
+  color: rgb(38, 224, 150);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar .menu-btn {
+  display: none;
+  background: none;
+  color: rgb(38, 224, 150);
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Hero Banner */
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  background: url('./images/hero.jpg') no-repeat center center/cover;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  /* Semi-transparent overlay */
+  z-index: 1;
+  /* Places the overlay above the background image */
+}
+
+.hero .container {
+  position: relative;
+  max-width: 1200px;
+  /* Adjust as needed */
+  padding: 0 20px;
+  z-index: 2;
+  /* Ensures text is above the overlay */
+}
+
+.hero h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 24px;
+}
+
+.hero .container {
+  position: relative;
+  max-width: 1200px;
+  /* Adjust as needed */
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 24px;
+}
+
+
+/* Technical Skills */
+#technical-skills {
+  padding: 20px;
+  color: white;
+  background-color: #01060d;
+  text-align: center;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 10px;
+  margin: 10px;
+
+  /* updated part */
+  margin-left: 20%;
+
+}
+
+.skills-list li {
+
+
+  display: flex;
+
+  align-items: center;
+  margin: 20px;
+}
+
+
+.skill-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 8px;
+}
+
+
+
+/* Projects */
+.projects {
+  background: #0a0717;
+  padding: 50px 0;
+}
+
+.projects h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.project-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.project-item {
+  background: black;
+  border-radius: 8px;
+  padding: 20px;
+  width: 30%;
+  height: 200px;
+  margin-bottom: 20px;
+  color: #40E0D0;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+.project-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: #b400e6;
+  /* Change color of text inside the div */
+}
+
+/* Ensure the link inside the project-item takes the div's hover color */
+.project-item a {
+  text-decoration: none;
+  color: inherit;
+  /* Inherit color from the parent div */
+}
+
+.project-item a:hover {
+  color: inherit;
+  /* Make sure the text color inside doesn't change independently */
+}
+
+
+.project-img {
+  background-size: contain;
+  /* Ensures the image covers the entire container */
+  background-position: bottom;
+  /* Centers the image within the container */
+  background-repeat: no-repeat;
+  /* Prevents the image from repeating */
+
+  width: 30%;
+  /* Adjust width as needed */
+
+}
+
+/* About Me */
+.about {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #040414;
+}
+
+.about p {
+  max-width: 600px;
+  margin: auto;
+}
+/* Footer */
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+
+.add-padding {
+  padding-left: 130px;
+  padding-right: 130px;
+}
+
+.sub-heading {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: white;
+
+}
+
+.stretch-text {
+  color: white;
+}
+
+.stretch-text {
+  text-align: justify;
+  /* This allows the paragraph to stretch */
+}
+
+.contact {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+
+}
+
+.btn {
+  width: 15%;
+  margin: 10px;
+
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  background-color: rgb(4, 22, 27);
+  border-radius: 10px;
+  color: #40E0D0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: #b400e6;
+}
+
+.contact-icon {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 8px;
+}
+
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .hero h1 {
+    font-size: 36px;
+    /* Smaller font size for mobile */
+  }
+
+  .hero p {
+    font-size: 18px;
+    /* Smaller font size for mobile */
+  }
+
+  .project-item {
+    width: 100%;
+    /* Full width for mobile */
+    margin-bottom: 20px;
+  }
+
+  .project-grid {
+    display: block;
+    /* Stack the project items vertically */
+  }
+
+  .navbar .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 200px;
+  }
+
+  .navbar .menu-btn {
+    display: block;
+  }
+
+  .skills-list li {
+    flex: 1 0 100%;
+    /* Full width for mobile */
+    margin-right: 0;
+
+
+  }
+
+  .contact {
+    display: block;
+  }
+
+  .btn {
+    width: 100%;
+    margin-right: 0px;
+    padding-right: 20px;
+  }
+
+  #technical-skills div {
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+    justify-content: center;
+  }
+
+  .add-padding {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  /* changing padding of menu-btn */
+  .menu-btn {
+    text-align: right;
+    margin-right: 0px;
+    padding-right: 20px;
+  }
+
+  .logo {
+    margin-left: 0px;
+    padding-left: 20px;
+  }
+
+  .navbar {
+    padding: 10px;
+  }
+}
+
+
+
+
+
+/* Styles for larger screens (PC) */
+@media (min-width: 768px) {
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .skills-list li {
+    flex: 1 0 45%;
+    /* 2 columns with some space between */
+    box-sizing: border-box;
+    margin-right: 10px;
+  }
+
+  .skills-list li:nth-child(2n) {
+    margin-right: 0;
+    /* Remove margin on the right for even items */
+  }
+}
