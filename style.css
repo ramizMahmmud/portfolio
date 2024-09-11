@@ -310,7 +310,7 @@ button:hover {
     /* Smaller font size for mobile */
   }
   .hero {
-    height: 50vh;
+    height: 70vh;
   }
   .hero::before {
     background: rgba(0, 0, 0, 0.6);
@@ -354,7 +354,7 @@ button:hover {
 
   }
   .projects {
-    background-color: #333;
+    background-color:  rgb(4, 22, 27);;
   }
 
   .contact {
