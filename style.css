@@ -354,9 +354,13 @@ button:hover {
 
   }
   .projects {
-    background-color:  rgb(4, 22, 27);;
+    background-color:  rgba(9, 37, 45, 0.937);;
   }
-
+  .project-item{
+    margin-bottom:50px ;
+    border: 2px solid white ;
+    
+  }
   .contact {
     display: block;
   }
