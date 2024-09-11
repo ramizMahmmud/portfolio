@@ -392,7 +392,9 @@ button:hover {
     padding: 10px;
   }
 }
-
+.footer {
+  font-size: 11px;
+}
 
 
 
