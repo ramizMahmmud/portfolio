@@ -310,7 +310,7 @@ button:hover {
     /* Smaller font size for mobile */
   }
   .hero {
-    height: 90vh;
+    height: 50vh;
   }
   .hero::before {
     background: rgba(0, 0, 0, 0.6);
