@@ -62,14 +62,14 @@ body {
 /* Hero Banner */
 .hero {
   position: relative;
-  height: 80vh;
+  height: 85vh;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   text-align: center;
   overflow: hidden;
-  background: url('./images/hero.jpg') no-repeat center center/cover;
+  background: url('./images/fluid-hero.jpg') no-repeat center center/cover;
 }
 
 .hero::before {
@@ -308,10 +308,12 @@ button:hover {
 @media screen and (max-width: 768px) {
   .hero h1 {
     font-size: 36px;
+
     /* Smaller font size for mobile */
   }
   .hero {
     height: 70vh;
+ 
   }
   .hero::before {
     background: rgba(0, 0, 0, 0.6);
