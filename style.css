@@ -408,6 +408,28 @@ button:hover {
 
 
 
+/* video */
+.project-video {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px; /* optional, for nice rounded edges */
+}
+
+.project-video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+.project-video-box {
+  position: relative;
+  z-index: 1; /* keep text on top of video */
+  color: white; /* or adjust depending on video */
+}
+
 
 
 /* Styles for larger screens (PC) */
