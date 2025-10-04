@@ -427,7 +427,7 @@ button:hover {
 .project-video-box {
   position: relative;
   z-index: 1; /* keep text on top of video */
-  color: white; /* or adjust depending on video */
+  color: #00FFFF;
 }
 
 
